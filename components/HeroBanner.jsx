@@ -17,7 +17,7 @@ const HeroBanner = ({ heroBanner }) => {
                         className="hero-banner-image"
                     />
                     <div>
-                        <Link href={`/product/${bannerSlug}`}>
+                        <Link href={`/product/smart-watch`}>
                             <button type="button">
                                 {heroBanner.buttonText}
                             </button>
