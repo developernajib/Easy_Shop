@@ -4,7 +4,7 @@ import { urlFor } from "../lib/client";
 
 const HeroBanner = ({ heroBanner }) => {
     let bannerSlug = heroBanner.product.toLowerCase();
-    bannerSlug = bannerSlug.replace(/ /, "-");
+    bannerSlug = bannerSlug.replace(" ", "-");
     return (
         <>
             <div className="hero-banner-container">
