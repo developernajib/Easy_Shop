@@ -4,6 +4,7 @@ import { urlFor } from "../lib/client";
 
 const HeroBanner = ({ heroBanner }) => {
     let bannerSlug = heroBanner.product.toLowerCase();
+    bannerSlug.replace(" ", "-");
     return (
         <>
             <div className="hero-banner-container">
@@ -17,7 +18,7 @@ const HeroBanner = ({ heroBanner }) => {
                         className="hero-banner-image"
                     />
                     <div>
-                        <Link href={`/product/smart-watch`}>
+                        <Link href={`/product/${bannerSlug}`}>
                             <button type="button">
                                 {heroBanner.buttonText}
                             </button>
